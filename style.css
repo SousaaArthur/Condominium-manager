@@ -30,26 +30,236 @@ body{
     box-shadow: 0px 0px 10px 0px #000;
 }
 
-.side-right{
+.column-panel{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #5DADE2;
-    height: 100%;
-    width: 75%;
+    height: 40rem;
+    width: 35rem;
     border-radius: 15px;
     box-shadow: 0px 0px 5px 0px #000;
+    transition: .5s;
+    margin-left: 35rem;
 }
 
-.side-left{
+.information-panel{
+    position: absolute;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100%;
+    text-align: center;
+    height: 40rem;
+    width: 35rem;
+    color: #fafafa;
+}
+
+.information-panel p{
+    color: #fafafa;
+}
+
+.btn-panel-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 7rem;
+    color: #fafafa;
+    border: 2px solid #fafafa;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-panel-register:hover{
+    background-color: #fafafa;
+    color: #5DADE2;
+}
+
+.image-svg{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 35rem;
+}
+
+.by-arthurdev{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35rem;
+    font-size: 18px;
+    text-decoration: none;
+    color: #303030;
+}
+
+.by-arthurdev p {
+    color: #303030;
+}
+
+.by-arthurdev a{
+    text-decoration: none;
+    color: #494cff;
+}
+
+.icons-social-network .fa-github{
+    font-size: 25px;
+    color: #303030;
+}
+
+.side-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40rem;
+    width: 40rem;
+}
+
+.side-right .text-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+    margin-top: 2.4rem;
+    height: 7.5rem;
+    width: 100%;
+    color: #5DADE2;
+}
+
+.form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20rem;
     width: 100%;
 }
 
-.text-group{
-    height: 8rem;
+.form-login label, p{
+    color: #666666;
+}
+
+.input-user-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-user-tag .fa-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
+    height: 2.5rem;
+    width: 2rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #5DADE2;
+}
+
+#userTag{
+    background-color: #e2e2e2;
+    border: none;
+    height: 2.5rem;
+    width: 20rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 16px;
+}
+
+.input-user-password-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-user-password-login .fa-lock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e2e2;
+    height: 2.5rem;
+    width: 2rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: #5DADE2;
+}
+
+#userPasswordLogin{
+    background-color: #e2e2e2;
+    border: none;
+    height: 2.5rem;
+    width: 20rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 16px;
+}
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnLogin{
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 20px;
+    color: #5DADE2;
+    background-color: transparent;
+    border: 2px solid #5DADE2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#btnLogin:hover{
+    background-color: #5DADE2;
+    color: #fafafa;
+}
+
+
+.side-left{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    height: 100%;
+    width: 40rem;
+}
+
+.btn-return{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #5DADE2;
+}
+
+.btn-return p{
+    font-size: 18px;
+    color: #5DADE2;
+}
+
+.btn-return .fa-chevron-left{
+    font-size: 17px;
+    margin: .3rem;
+}
+
+.side-left .text-group{
+    height: 6rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,25 +267,22 @@ body{
     flex-direction: column;
     gap: 1rem;
     font-size: 20px;
-    margin-top: 1rem;
     color: #5DADE2;
-    background-color: #67f88600;
 }
-
 
 .text-group p{
     color: #c5c5c5;
 }
 
-.form{
+.form-register{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 
-.form-container label, p{
+.form-register label, p{
     color: #666666;
 }
 
@@ -105,6 +312,11 @@ body{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    border: none;
 }
 
 .input-user-email{

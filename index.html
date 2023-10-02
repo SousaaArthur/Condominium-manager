@@ -11,32 +11,85 @@
 <body onload="generate()">
     <div class="main-container">
         <div class="panel-login">
-            <div class="side-right">
-                <img src="./assets/SVGS/Houses-amico.svg" alt="">
-            </div>
-            <div>
-                <div>
-
+            <div class="column-panel">
+                <div class="image-svg">
+                    <img src="./assets/SVGs/Houses-amico.svg" alt="">
                 </div>
-                <div>
-
+                <div class="information-panel">
+                    <h1>
+                        Seja bem vindo!
+                    </h1>
+                    <br>
+                    <p>
+                        Descubra uma maneira mais fácil e eficiente de gerenciar seu lar. 
+                    </p>
+                    <p>
+                        Cadastre-se agora no nosso site de gerenciamento de condomínio e experimente!
+                    </p>
+                    <br>
+                    <div class="btn-panel-register off">
+                        Cadastra-se
+                    </div>
+                </div>
+                <div class="by-arthurdev">
+                    <p>Create by <a href="https://www.instagram.com/arthurdev._/">arthurdev._</a></p>
+                    <div class="icons-social-network">
+                        <a href="https://github.com/SousaaArthur">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="side-right">
+                <div class="text-group">
+                    <h1>
+                        Entrar
+                    </h1>
+                    <p>Faça seu login aqui! E seja feliz.</p>
+                </div>
+                <div class="form-login">
+                    <form action="">
+                        <label for="userTag">
+                            Tag de usuário:
+                        </label>
+                        <div class="input-user-tag">
+                            <i class="fa-solid fa-tag"></i>
+                            <input type="text" name="userTag" id="userTag" placeholder="Sau tag" autocomplete="off">
+                        </div>
+                        <br><br>
+                        <label for="userPasswordLogin">
+                            Senha:
+                        </label>
+                        <div class="input-user-password-login">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="userPasswordLogin" id="userPasswordLogin" placeholder="Sua senha">
+                        </div>
+                        <br><br>
+                        <div class="btn-login">
+                            <input type="submit" value="Entrar" id="btnLogin">
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="side-left">
+                <div class="btn-return off">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <p>Volta</p>
+                </div>
                 <div class="text-group">
                     <h1>
                         Registrar
                     </h1>
                     <p>Cadastre seu apartamento aqui!</p>
                 </div>
-                <div class="form">
+                <div class="form-register">
                     <form action="?" method="POST">
                         <label for="userName">
                             Nome completo:
                         </label>
                         <div class="input-user-name">
                             <i class="fa-solid fa-user"></i>
-                            <input type="text" name="userName" id="userName" placeholder="Seu nome">
+                            <input type="text" name="userName" id="userName" placeholder="Seu nome" autocomplete="off">
                         </div>
                         <br>
                         <label for="userEmail">
@@ -44,7 +97,7 @@
                         </label>
                         <div class="input-user-email">
                             <i class="fa-solid fa-at"></i>
-                            <input type="email" name="userEmail" id="userEmail" placeholder="Exemplo@gmail.com">
+                            <input type="email" name="userEmail" id="userEmail" placeholder="Exemplo@gmail.com" autocomplete="off">
                         </div>
                         <br>
                         <label for="userPassword">
@@ -60,7 +113,7 @@
                         </label>
                         <div class="input-user-confirm-password">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="userConfirmPassword" id="userConfirmPassword" placeholder="Sua senha">
+                            <input type="password" name="userConfirmPassword" id="userConfirmPassword" placeholder="Confirme sua senha">
                         </div>
                         <br>
                         <div class="g-recaptcha" data-sitekey="6LdUlGcoAAAAAMyFpNId4DHqTRm-WV5i3rIG9YlL"></div>
@@ -69,48 +122,11 @@
                             <input type="submit" value="Registrar" id="btnRegister">
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
-
-<!--
-    <div class="user-name-register">
-                                <label for="userName">
-                                    Nome completo:
-                                </label>
-                                <div class="input-user-name">
-                                    <i class="fa-solid fa-user"></i>
-                                    <input type="text" name="userName" id="userName" placeholder="Seu nome">
-                                </div>
-                            </div>
-                            <div class="user-email-register">
-                                <label for="userEmail">
-                                    E-mail:
-                                </label>
-                                <div class="input-user-email">
-                                    <i class="fa-solid fa-at"></i>
-                                    <input type="email" name="userEmail" id="userEmail" placeholder="Exemplo@gmail.com">
-                                </div>
-                            </div>
-                            <div class="user-password-register">
-                                <label for="userPassword">
-                                    Senha:
-                                </label>
-                                <div class="input-user-password">
-                                    <i class="fa-solid fa-lock"></i>
-                                    <input type="password" name="userPassword" id="userPassword" placeholder="Sua senha">
-                                </div>
-                            </div>
-                            <div class="user-confirm-password-register">
-                                <label for="userConfirmPassword">
-                                    Confirmar senha:
-                                </label>
-                                <div class="input-user-confirm-password">
-                                    <i class="fa-solid fa-lock"></i>
-                                    <input type="password" name="userConfirmPassword" id="userConfirmPassword" placeholder="Sua senha">
-                                </div>
-                            </div>
